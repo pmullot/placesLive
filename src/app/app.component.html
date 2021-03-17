@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Find a place</h1>
+
+  <input type="text" #text />
+  <br />
+  <ul class="result-container">
+    <li *ngFor="let place of places$ | async">
+      <div class="result">
+        <img [src]="place.icon" alt="" />
+        <span class="name">{{ place.name }}</span>
+        <span class="address">({{ place.formatted_address }})</span>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,45 @@
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 750px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.result-container {
+  margin: 0.5em 0;
+  overflow: auto;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+.result {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+
+  img {
+    width: 1em;
+    height: 1em;
+    padding-right: 0.5em;
+  }
+
+  .name {
+    font-size: 1.1em;
+    padding-right: 1em;
+  }
+
+  .address {
+    font-size: 0.8em;
+    color: #595959;
+  }
+}
